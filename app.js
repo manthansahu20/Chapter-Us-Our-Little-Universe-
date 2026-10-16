@@ -296,7 +296,7 @@ function formatTime(secs) {
 }
 
 /* -------------------------------------------------------------
- * 5. Memories Photo Gallery & Lightbox
+ * 5. Memories Photo Gallery & Lightbox (Clean View - No Titles)
  * ------------------------------------------------------------- */
 function renderGallery() {
   const container = document.getElementById("gallery-container");
@@ -305,29 +305,22 @@ function renderGallery() {
   container.innerHTML = UniverseData.gallery
     .map(
       (item) => `
-      <div class="gallery-card" onclick="openPhotoModal('${item.src}', '${item.title}', '${item.caption}')">
-        <img src="${item.src}" alt="${item.title}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'400\\' height=\\'500\\' fill=\\'%2310152B\\'><rect width=\\'100%\\' height=\\'100%\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%237057D9\\' font-size=\\'22\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\'>Photo: ${item.category}</text></svg>'">
-        <div class="gallery-overlay">
-          <div class="gallery-category">${item.category}</div>
-          <div class="gallery-title serif">${item.title}</div>
-          <div class="gallery-caption">${item.caption}</div>
-        </div>
+      <div class="gallery-card" onclick="openPhotoModal('${item.src}')">
+        <img src="${item.src}" alt="Memory Photo" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'400\\' height=\\'500\\' fill=\\'%2310152B\\'><rect width=\\'100%\\' height=\\'100%\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%237057D9\\' font-size=\\'22\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\'>Photo</text></svg>'">
       </div>
     `
     )
     .join("");
 }
 
-window.openPhotoModal = function (src, title, caption) {
+window.openPhotoModal = function (src) {
   const modal = document.getElementById("custom-modal");
   const modalBody = document.getElementById("modal-body");
   if (!modal || !modalBody) return;
 
   modalBody.innerHTML = `
     <div style="text-align: center;">
-      <img src="${src}" alt="${title}" style="max-height: 60vh; margin: 0 auto 1.5rem; border-radius: 12px; box-shadow: var(--shadow-subtle);" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'500\\' height=\\'500\\' fill=\\'%2310152B\\'><rect width=\\'100%\\' height=\\'100%\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%239B87FF\\' font-size=\\'24\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\'>${title}</text></svg>'">
-      <h3 class="serif" style="font-size: 1.5rem; margin-bottom: 0.5rem;">${title}</h3>
-      <p class="text-muted" style="font-size: 0.95rem;">${caption}</p>
+      <img src="${src}" alt="Memory" style="max-height: 80vh; max-width: 100%; margin: 0 auto; border-radius: 12px; box-shadow: var(--shadow-subtle);">
     </div>
   `;
   modal.classList.add("open");
