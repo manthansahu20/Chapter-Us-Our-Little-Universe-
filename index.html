@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter Us — Our Little Universe</title>
+  <meta name="description" content="A private digital universe dedicated to the friendship between Manthan and Awwlie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Root level CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-dot"></span>
+      <span>Chapter Us</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#story" class="nav-link">Our Story</a></li>
+      <li><a href="#soundtrack" class="nav-link">Soundtrack</a></li>
+      <li><a href="#memories" class="nav-link">Memories</a></li>
+      <li><a href="#untold" class="nav-link">Letters</a></li>
+      <li><a href="#conversations" class="nav-link">Conversations</a></li>
+      <li><a href="#little-things" class="nav-link">Little Things</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation">☰</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <span>✨</span> Hey, Awwlie · Welcome to our little universe
+      </div>
+      <h1 class="hero-title serif text-gradient">Chapter Us</h1>
+      <h2 class="hero-subtitle">Our Little Universe</h2>
+      <p class="hero-quote">
+        "Some people don't just become a part of your life. They slowly become a place where your heart feels at home."
+      </p>
+      <div class="hero-actions">
+        <a href="#story" class="btn-primary">Enter Our Universe →</a>
+        <a href="#soundtrack" class="btn-secondary">Listen to Soundtrack</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Friendship Counter -->
+  <section class="section">
+    <div class="container">
+      <div class="counter-box">
+        <span class="section-tag">Since April 2, 2025</span>
+        <h3 class="serif" style="font-size: 1.6rem; margin-bottom: 0.5rem;">An Ordinary Day That Became Our Story</h3>
+        <p class="text-muted" style="font-size: 0.9rem;">From raw mango and conversations to an irreplaceable sibling-like bond.</p>
+        <div class="counter-grid">
+          <div class="counter-item">
+            <div class="counter-number" id="counter-years">0</div>
+            <div class="counter-label">Years</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-number" id="counter-months">0</div>
+            <div class="counter-label">Months</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-number" id="counter-days">0</div>
+            <div class="counter-label">Days</div>
+          </div>
+        </div>
+        <div class="text-gold" id="counter-total-days" style="font-size: 0.85rem; letter-spacing: 0.05em;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section id="story" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Chronicles of Us</span>
+        <h2 class="section-title serif">The Story of Us</h2>
+        <p class="section-subtitle">A journey not of dramatic shifts, but of natural comfort and unspoken trust.</p>
+      </div>
+      <div class="timeline" id="timeline-container"></div>
+    </div>
+  </section>
+
+  <!-- Soundtrack -->
+  <section id="soundtrack" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curation</span>
+        <h2 class="section-title serif">Our Soundtrack</h2>
+        <p class="section-subtitle">"Some memories have a place, some have a photograph, and some have a song."</p>
+      </div>
+
+      <div class="soundtrack-wrapper">
+        <div class="player-panel">
+          <div class="player-artwork-box">
+            <img id="player-artwork" class="player-artwork" src="" alt="Album Artwork">
+          </div>
+          <div class="player-info">
+            <div id="player-title" class="player-title">Track Title</div>
+            <div id="player-artist" class="player-artist">Artist</div>
+          </div>
+          <div id="player-note" class="player-note"></div>
+
+          <div class="progress-container">
+            <span id="player-current-time">0:00</span>
+            <div class="progress-bar" id="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <span id="player-total-duration">0:00</span>
+          </div>
+
+          <div class="player-controls">
+            <button class="control-btn" id="player-prev" title="Previous Track" aria-label="Previous">⏮</button>
+            <button class="play-main-btn" id="play-main-toggle" title="Play or Pause" aria-label="Play">▶</button>
+            <button class="control-btn" id="player-next" title="Next Track" aria-label="Next">⏭</button>
+          </div>
+        </div>
+
+        <div class="tracklist" id="tracklist-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="memories" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Archive</span>
+        <h2 class="section-title serif">Little Moments, Forever Ours</h2>
+        <p class="section-subtitle">"Not every memory needs a big story. Some are special simply because we were there together."</p>
+      </div>
+      <div class="gallery-grid" id="gallery-container"></div>
+    </div>
+  </section>
+
+  <!-- Letters -->
+  <section id="untold" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Letters</span>
+        <h2 class="section-title serif">Things I Never Said</h2>
+        <p class="section-subtitle">Written thoughts, affirmations, and letters kept safe for whenever you need them.</p>
+      </div>
+      <div class="envelopes-grid" id="envelopes-container"></div>
+    </div>
+  </section>
+
+  <!-- Conversations -->
+  <section id="conversations" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Words</span>
+        <h2 class="section-title serif">The Conversations That Made Us</h2>
+        <p class="section-subtitle">The lighthearted banter, quick check-ins, and late-night honesty that built our bond.</p>
+      </div>
+      <div class="convo-grid" id="conversations-container"></div>
+    </div>
+  </section>
+
+  <!-- Little Things -->
+  <section id="little-things" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuance</span>
+        <h2 class="section-title serif">Our Little Things</h2>
+        <p class="section-subtitle">The quiet definitions of our friendship that need no validation from the outside.</p>
+      </div>
+      <div class="little-things-grid" id="little-things-container"></div>
+    </div>
+  </section>
+
+  <!-- Secret Star -->
+  <div class="secret-trigger-wrapper">
+    <button id="secret-star" class="secret-star-btn" title="Discover" aria-label="A secret corner">✦</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h3 class="footer-quote serif text-gradient">"This is not the end of our story. It's just another page in it."</h3>
+      <p class="footer-desc">
+        To all the memories we've made, the little moments we still remember, and the ones waiting for us ahead.
+      </p>
+      <div class="footer-sign">Made with love, for Awwlie.</div>
+      <div>
+        <a href="#home" class="btn-secondary" style="font-size:0.85rem;">Back to Our Universe ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox & Letter Modal -->
+  <div class="modal-backdrop" id="custom-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Root level JS files -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+  </html>
+  
