@@ -16,7 +16,7 @@ const UniverseData = {
       date: "Late 2024 / Early 2025",
       narrative:
         "Before we became best friends, we already knew each other. We talked, shared little everyday moments, and slowly discovered how naturally our vibes matched. We weren't strangers who suddenly collided — we were two familiar lives that gradually found comfort in each other's presence.",
-      image: "assets/gallery/1000135831.jpg",
+      image: "assets/gallery/photo1.jpg",
       tag: "Familiar Strangers"
     },
     {
@@ -26,7 +26,7 @@ const UniverseData = {
       date: "April 2, 2025",
       narrative:
         "A slice of raw mango tossed with salt and red chili. There was no theatrical spark or formal vow — just effortless laughter, genuine conversations, and an unspoken realization that sitting right here, being completely ourselves, was the easiest thing in the world.",
-      image: "assets/gallery/1000135808.jpg",
+      image: "assets/gallery/photo2.jpg",
       tag: "The Spark"
     },
     {
@@ -36,7 +36,7 @@ const UniverseData = {
       date: "Spring 2025",
       narrative:
         "The shift was subtle: we started turning to each other for the big highs, the quiet lows, and every trivial random thought in between. We learned that true closeness doesn't demand daily attendance or non-stop messages; even after days of silence, we pick up right where we left off.",
-      image: "assets/gallery/1000135866.jpg",
+      image: "assets/gallery/photo3.jpg",
       tag: "Safe Harbor"
     },
     {
@@ -46,7 +46,7 @@ const UniverseData = {
       date: "May 2025",
       narrative:
         "By the time of the wedding celebrations in May 2025, our bond was set in stone. Through the rush, the rituals, and the celebrations, having each other around felt like family. Certified best friends — two people who just click.",
-      image: "assets/gallery/1000019621.jpg",
+      image: "assets/gallery/photo4.jpg",
       tag: "Family by Choice"
     },
     {
@@ -56,18 +56,18 @@ const UniverseData = {
       date: "Present & Future",
       narrative:
         "From spontaneous inside jokes to quiet support on long days, the chapter isn't closed. It expands with every laugh, every shared track, and every new memory we carry forward.",
-      image: "assets/gallery/1000135521.jpg",
+      image: "assets/gallery/photo5.jpg",
       tag: "Unwritten"
     }
   ],
 
-  // Soundtrack items (Har gaane ke liye distinct cover aur audio source)
+  // Soundtrack items (Har song ke liye alag photo cover)
   soundtrack: [
     {
       id: "track-1",
       title: "Yaar Na Mile",
       artist: "The Masters",
-      cover: "assets/gallery/1000135820.jpg",
+      cover: "assets/gallery/photo6.jpg",
       src: "assets/audio/song2.mp3",
       externalUrl: "https://open.spotify.com",
       note: "Dukh hove sukh hove, tu hamesha naal khadeya hai — tere jeha yaar hor koi na mile."
@@ -76,7 +76,7 @@ const UniverseData = {
       id: "track-2",
       title: "Sochan Tere Baare",
       artist: "Harjot Randhawa",
-      cover: "assets/gallery/1000135808.jpg",
+      cover: "assets/gallery/photo2.jpg",
       src: "assets/audio/song3.mp3",
       externalUrl: "https://open.spotify.com",
       note: "Pani de kinare baith ke bas teriyan gallan — khwab vich vi tu hi naal hove."
@@ -85,7 +85,7 @@ const UniverseData = {
       id: "track-3",
       title: "Teriyan Yaadan",
       artist: "Prince Sandhu",
-      cover: "assets/gallery/1000039671.jpg",
+      cover: "assets/gallery/photo7.jpg",
       src: "assets/audio/song4.mp3",
       externalUrl: "https://open.spotify.com",
       note: "Pehle pyaar di pehli kahani wargi yaari, jo kade bhuli nahi jaa sakdi."
@@ -94,7 +94,7 @@ const UniverseData = {
       id: "track-4",
       title: "Woh Noor",
       artist: "Harsh Gahlot",
-      cover: "assets/gallery/1000135523.jpg",
+      cover: "assets/gallery/photo8.jpg",
       src: "assets/audio/song6.mp3",
       externalUrl: "https://open.spotify.com",
       note: "Wo noor jo dekha chehre ka, hui roshan meri nigahein."
@@ -103,7 +103,7 @@ const UniverseData = {
       id: "track-5",
       title: "Jadon Kol Tu Hovein",
       artist: "Prince Sandhu",
-      cover: "assets/gallery/1000135521.jpg",
+      cover: "assets/gallery/photo5.jpg",
       src: "assets/audio/song5.mp3",
       externalUrl: "https://open.spotify.com",
       note: "Jadon kol tu hovein, din change lagde ne te change ne halaat."
@@ -112,63 +112,29 @@ const UniverseData = {
       id: "track-6",
       title: "Har Saah Naal",
       artist: "Prince Sandhu",
-      cover: "assets/gallery/1000039594.jpg",
+      cover: "assets/gallery/photo9.jpg",
       src: "assets/audio/song1.mp3",
       externalUrl: "https://open.spotify.com",
       note: "Subah te shaam, har mod te bas ek sachi dosti da sahara."
     }
   ],
 
-  // Gallery Photos
+  // Gallery Photos (Pure 14 photos bina kisi title ya caption ke)
   gallery: [
-    {
-      id: "photo-1",
-      src: "assets/gallery/1000019621.jpg",
-      title: "Haldi Celebrations",
-      caption: "Matching yellow vibes and family celebrations.",
-      category: "Wedding Memories",
-      date: "May 2025"
-    },
-    {
-      id: "photo-2",
-      src: "assets/gallery/1000135866.jpg",
-      title: "The Rakhi Bond",
-      caption: "Sibling love and an unbreakable promise.",
-      category: "Our Photos",
-      date: "2025"
-    },
-    {
-      id: "photo-3",
-      src: "assets/gallery/1000135820.jpg",
-      title: "Rooftop Calm",
-      caption: "Unfiltered comfort — where silence is never awkward.",
-      category: "Favorite Pictures",
-      date: "2025"
-    },
-    {
-      id: "photo-4",
-      src: "assets/gallery/1000039671.jpg",
-      title: "Traditional Us",
-      caption: "Under the open skies, just smiling through life.",
-      category: "Random Moments",
-      date: "2025"
-    },
-    {
-      id: "photo-5",
-      src: "assets/gallery/1000135520.jpg",
-      title: "Playful Pointer",
-      caption: "Who makes more noise? Certified partner in crime.",
-      category: "Unforgettable Days",
-      date: "2025"
-    },
-    {
-      id: "photo-6",
-      src: "assets/gallery/1000135841.jpg",
-      title: "Standing Strong",
-      caption: "Two people who became home for each other.",
-      category: "Our Photos",
-      date: "2026"
-    }
+    { id: "photo-1", src: "assets/gallery/photo1.jpg" },
+    { id: "photo-2", src: "assets/gallery/photo2.jpg" },
+    { id: "photo-3", src: "assets/gallery/photo3.jpg" },
+    { id: "photo-4", src: "assets/gallery/photo4.jpg" },
+    { id: "photo-5", src: "assets/gallery/photo5.jpg" },
+    { id: "photo-6", src: "assets/gallery/photo6.jpg" },
+    { id: "photo-7", src: "assets/gallery/photo7.jpg" },
+    { id: "photo-8", src: "assets/gallery/photo8.jpg" },
+    { id: "photo-9", src: "assets/gallery/photo9.jpg" },
+    { id: "photo-10", src: "assets/gallery/photo10.jpg" },
+    { id: "photo-11", src: "assets/gallery/photo11.jpg" },
+    { id: "photo-12", src: "assets/gallery/photo12.jpg" },
+    { id: "photo-13", src: "assets/gallery/photo13.jpg" },
+    { id: "photo-14", src: "assets/gallery/photo14.jpg" }
   ],
 
   // Untold Letters (Digital Envelopes)
