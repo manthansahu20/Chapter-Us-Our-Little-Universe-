@@ -123,11 +123,11 @@ const UniverseData = {
   gallery: [
     { id: "photo-1", src: "./assets/gallery/1000019621.jpg" },
     { id: "photo-2", src: "./assets/gallery/1000039594.jpg" },
-    { id: "photo-3", src: "./assets/gallery/1000039667.jpg" },
+    { id: "photo-3", src: "./assets/gallery/1000039662.jpg" },
     { id: "photo-4", src: "./assets/gallery/1000039671.jpg" },
     { id: "photo-5", src: "./assets/gallery/1000135523.jpg" },
     { id: "photo-6", src: "./assets/gallery/1000135606.jpg" },
-    { id: "photo-7", src: "./assets/gallery/1000135807.jpg" },
+    { id: "photo-7", src: "./assets/gallery/1000135802.jpg" },
     { id: "photo-8", src: "./assets/gallery/1000135808.jpg" },
     { id: "photo-9", src: "./assets/gallery/1000135820.jpg" },
     { id: "photo-10", src: "./assets/gallery/1000135830.jpg" },
@@ -136,6 +136,7 @@ const UniverseData = {
     { id: "photo-13", src: "./assets/gallery/1000135844.jpg" },
     { id: "photo-14", src: "./assets/gallery/1000135850.jpg" }
   ],
+  
 
   // Untold Letters (Digital Envelopes)
   letters: [
